@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Design</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid bg-info p-2">
+      <div class="row justify-content-around">
+        <div class="col-3 d-flex justify-content-between px-5">
+          <img
+            class="navbar-brand"
+            src="https://assets.leetcode.com/static_assets/public/images/LeetCode_logo_rvs.png"
+            alt="logo"
+            style="width: 40px; height: 40px"
+          />
+          <p>Name</p>
+        </div>
+        <div class="col-lg-6 rounded-5 input-group" style="width: 550px">
+          <input
+            class="px-2 form-control"
+            style="width: 500px; border: none; outline: none"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search something here..."
+          />
+          <div class="input-group-text"></div>
+        </div>
+        <div class="col-3 d-flex justify-content-between px-5">
+          <p>Home</p>
+          <p>About</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div
+        class="bg-info-subtle col-sm-12 col-md-4 col-lg-4 text-center"
+        style="height: 200px"
+      >
+        <p>Ads</p>
+      </div>
+      <div
+        class="bg-danger-subtle col-sm-12 col-md-8 col-lg-8 text-center"
+        style="height: 200px"
+      >
+        <p>Discount</p>
+      </div>
+    </div>
+    <div class="container mt-3 mb-3">
+      <h3>Modal Example</h3>
+      <p>Click on the button to open the modal.</p>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#myModal"
+      >
+        Open modal for search something.
+      </button>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Search</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="input-group rounded-5" style="width: 350px">
+            <div class="input-group-text">@</div>
+            <input
+              class="px-2 form-control"
+              style="width: 300px; border: none; outline: none"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search something here..."
+            />
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-danger p-3 justify-content-between p-4">
+      <div
+        class="card col-3 justify-content-center text-center"
+        style="width: 200px; height: 175px"
+      >
+        <p>card 1</p>
+      </div>
+      <div
+        class="card col-3 justify-content-center text-center"
+        style="width: 200px; height: 175px"
+      >
+        card 2
+      </div>
+      <div
+        class="card col-3 justify-content-center text-center"
+        style="width: 200px; height: 175px"
+      >
+        card 3
+      </div>
+      <div
+        class="card col-3 justify-content-center text-center"
+        style="width: 200px; height: 175px"
+      >
+        card 4
+      </div>
+      <div
+        class="card col-3 justify-content-center text-center"
+        style="width: 200px; height: 175px"
+      >
+        card 5
+      </div>
+    </div>
+    <div class="footer row mt-4">
+      <div class="col-3 text-bg-info" style="height: 200px">Link</div>
+      <div class="col-3 bg-danger" style="height: 200px">Office Address</div>
+      <div class="col-3 bg-danger-subtle" style="height: 200px">Nav Link</div>
+      <div class="col-3 bg-info-subtle" style="height: 200px">Map</div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

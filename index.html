@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-body">
+    <div class="container-fluid mt-2">
+      <div class="row">
+        <div
+          class="text-bg-info mx-auto rounded-3"
+          style="width: 550px; height: 400px; margin-top: 125px"
+        >
+          <form style="width: 400px; margin: 75px auto">
+            <div class="input-group mt-4">
+              <label for="name" class="input-group-text">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="input-group mt-3">
+              <label for="email" class="input-group-text">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+              />
+            </div>
+            <div class="input-group mt-3">
+              <label for="password" class="input-group-text">Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                id="password"
+                placeholder="Enter your password.."
+              />
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-5">
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="alert alert-success alert-dismissible mt-3">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+        <strong>Success!</strong> This alert box could indicate a successful or
+        positive action.
+      </div>
+    </div>
+
+    <!--Button and button group-->
+    <div class="btn-group mb-4">
+      <button class="btn btn-success">Apple</button>
+      <button class="btn btn-success">Samsung</button>
+      <div class="btn-group">
+        <button
+          class="btn btn-success dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          sony
+        </button>
+        <div class="dropdown-menu">
+          <a href="x" class="dropdown-item">Tablet</a>
+          <a href="x" class="dropdown-item">Smartphone</a>
+        </div>
+      </div>
+    </div>
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a href="" class="page-link">previous</a>
+      </li>
+      <li class="page-item"><a href="" class="page-link">page 1</a></li>
+      <li class="page-item active"><a href="" class="page-link">page 2</a></li>
+      <li class="page-item"><a href="" class="page-link">page 3</a></li>
+      <li class="page-item"><a href="" class="page-link">page 4</a></li>
+      <li class="page-item"><a href="" class="page-link">Next</a></li>
+    </ul>
+    <!-- list group -->
+
+    <ul class="list-group list-group-horizontal">
+      <!--list-group-horizontal-->
+      <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+      >
+        inbox
+        <span class="badge bg-danger rounded-pill">50</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+      >
+        junk
+        <span class="badge bg-info rounded-pill">20</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+      >
+        mail
+        <span class="badge bg-primary rounded-pill">30</span>
+      </li>
+    </ul>
+    <!-- collapse -->
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" href="#collapseOne" data-bs-toggle="collapse"
+            >collapsiable btn #1</a
+          >
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+            qui animi rerum! Cum deserunt esse iste modi ducimus exercitationem
+            in asperiores beatae voluptates animi hic voluptas dolores
+            perferendis, omnis laborum.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" href="#collapseTwo" data-bs-toggle="collapse"
+            >collapsiable btn #2</a
+          >
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+            qui animi rerum! Cum deserunt esse iste modi ducimus exercitationem
+            in asperiores beatae voluptates animi hic voluptas dolores
+            perferendis, omnis laborum.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" href="#collapseThree" data-bs-toggle="collapse"
+            >collapsiable btn #3</a
+          >
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+            qui animi rerum! Cum deserunt esse iste modi ducimus exercitationem
+            in asperiores beatae voluptates animi hic voluptas dolores
+            perferendis, omnis laborum.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
